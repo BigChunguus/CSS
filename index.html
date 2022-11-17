@@ -1,1 +1,853 @@
-yhrtynumyjmyjfmyh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Explicación de CSS en profundidad</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script src="https://kit.fontawesome.com/0106407f41.js" crossorigin="anonymous"></script>
+<!-- hOLA -->
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="contenedor">
+        <nav class="indice">
+            <h1>Tutorial de CSS <span class="por">By Alejandro Cruz</span></h1>
+            <ul class="indiceul">
+                <li class="indiceli"><a href="#texto">Texto</a></li>
+                <li class="indiceli"><a href="#bordes">Bordes</a></li>
+                <li class="indiceli"><a href="#degr">Degradados y sombras</a></li>
+                <li class="indiceli"><a href="#myp">Margin & Padding</a></li>
+                <li class="indiceli"><a href="#list">Estilo de listas</a></li>
+                <li class="indiceli"><a href="#position">Position</a></li>
+                <li class="indiceli"><a href="#display">Display</a></li>
+                <li class="indiceli"><a href="#hover">Hover</a></li>
+                <li class="indiceli"><a href="#trnsition">Transiciones</a></li>
+                <li class="indiceli"><a href="#transform">Transform</a></li>
+                <li class="indiceli"><a href="#animacion">Animaciones</a></li>
+                <li class="indiceli"><a href="#herr">Herramientas</a></li>
+                <li class="indiceli"><a href="#bya">Before & After</a></li>
+                <li class="indiceli"><a href="#boton">Boton & Active</a></li>
+                <li class="indiceli"><a href="#combinador">Combinadores</a></li>
+                <li class="indiceli"><a href="#unidades">Unidades de Medida</a></li>
+            </ul>
+        </nav>
+        <!-- Texto -->
+        <div class="caja" style="--color:rgb(195, 27, 27)" id="texto">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="brush-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Edición de texto
+                    </h2><br>
+                    <p>
+                        Los colores, pueden cambiar, tanto de color, forma, "sentido"...
+                    </p>
+                    <p>
+                        Las ediciones tienen que apuntar directamente a la etiqueta querida: 
+                    </p>
+                    <br>
+                    <div class="img 1">
+                        <img src="img/img-1.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <p class="color-fuente exp">
+                        (Todos los tipos de cambio de fuente empiezan por: "font")
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Border -->
+        <div class="caja" style="--color:rgb(195, 100, 27)" id="bordes">
+            <div class="contenido">
+                <div class="icono 3">
+                    <ion-icon name="albums-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Los bordes
+                    </h2><br>
+                    <p>
+                        Al igual que el texto, los bordes se pueden cambiar al gusto
+                    </p>
+                    <p>
+                        Puedes dar grosor, color, reborde, degradado(dificil)...
+                    </p>
+                    <br>
+                    <div class="img 2">
+                        <img src="img/img-2.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="caja-exp exp">
+                        <p>
+                            (Casi todos los codigos del borde, empiezan por: "border")
+                        </p>
+                    </div>
+                    <br>
+                    <div class="caja-exp2 exp">
+                        <p>
+                            Está es la caja exp2
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Degradados y sombras -->
+        <div class="caja" style="--color:rgb(195, 161, 27)" id="degr">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="aperture-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Degradados y sombras
+                    </h2><br>
+                    <p>
+                        Un simple diseño para mayor elegancia
+                    </p>
+                    <p>
+                        La construccion es simple => background: linear-gradient(-direccion-, -color1-, -color2-);
+                    </p>
+                    <p>
+                        ¡Cuidado! Ya que no se puede utilizar dentro de "background-color". Simplemente no lo identifica
+                    </p>
+                    <p>
+                        Puedes añadir la cantidad de colores que quieras pero siempre tiene que haber una coma entre ellos <br> y la direccion
+                    </p>
+                    <br>
+                    <div class="img 6">
+                        <img src="img/img-6.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="degradado-exp">
+                        <p>
+                            Este es un "div" degradado y con sombra
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Margin & Padding -->
+        <div class="caja" style="--color:rgb(128, 195, 27)" id="myp">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="scan-circle-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Margin y Padding
+                    </h2><br>
+                    <p>
+                        Estos se utilizan, para dar espacios dentro y fuera de la etiqueta.
+                    </p>
+                    <p>
+                        Naranja: Caja externa
+                    </p>
+                    <p>
+                        Azul: Caja Interna
+                    </p>
+                    <br>
+                    <div class="img 3">
+                        <img src="img/img-3.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="myp">
+                        <div class="margen">
+                            <p>Margin</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="myp">
+                        <div class="relleno">
+                            <p>Padding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- List Style -->
+        <div class="caja" style="--color:rgb(55, 195, 27)" id="list">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="list-outline"></ion-icon>   
+                </div>
+                <div class="texto">
+                    <h2>
+                        Estilos de lista       
+                    </h2><br>
+                    <p>
+                        La lista en si es para dar un
+                    </p>
+                    <p>
+                        Lo basico simplemente seria el diseño de su numeración, tanto color de la puntuación
+                    </p>
+                    <br>
+                    <p>
+                        Lo mejor sera dar lo basico
+                    </p>
+                    <br>
+                    <div class="img 3">
+                        <img src="img/img-4.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="lista exp">
+                        <ul class="lista-exp">
+                            <li>Primer objeto de lista</li>
+                            <li>Segundo objeto de lista</li>
+                            <li>Tercer objeto de lista</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Position -->
+        <div class="caja" style="--color:rgb(27, 195, 94)" id="position">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Positions
+                    </h2><br>
+                    <p>
+                        La propiedad "position", especifica el tipo de metodo de posicionamiento usado para un elemento.
+                    </p>
+                    <p>
+                        Tiene 5 tipos:
+                    </p>
+                    <p>
+                        <u><strong>"static"</strong></u> : Los elementos posicionados estáticos no se ven afectados por las propiedades superior, inferior, izquierda y derecha. <br>
+                        Un elemento con este posicionamiento no está posicionado de ninguna manera especial; siempre se coloca de acuerdo con el flujo normal de la página
+                    </p>
+                    <br>
+                    <p>
+                        <u><strong>"relative"</strong></u> : Este posicionamiento, se ajusta dependiendo la disponibilidad de espacio. <br> 
+                        Al establecer las propiedades superior, derecha, inferior e izquierda de un elemento relativamente posicionado hará que <br> se ajuste fuera de su posición normal. Establecer las propiedades superior, <br>
+                        derecha, inferior e izquierda de un elemento relativamente posicionado hará que se ajuste ajustarse lejos de su posición normal.
+                    </p>
+                    <br>
+                    <p>
+                        <u><strong>"fixed"</strong></u>: Se coloca en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar, <br> incluso si se desplaza la página. Las propiedades superior, derecha, inferior e izquierda se utilizan para colocar el elemento.
+                    </p>
+                    <br>
+                    <p>
+                        <u><strong>"absolute"</strong></u>: Se coloca en relación con la entidad posicionada más cercano <br> (en lugar de posicionarse en relación con la ventana gráfica, como fijo). <br>
+                        Sin embargo, si un elemento con posición absoluta no tiene entidad padre con otra posición, <br> utiliza el elemento "body" del documento.
+                    </p>
+                    <br>
+                    <p>
+                        <u><strong>"sticky"</strong></u>: Los elementos con esta posoción, se colocan en la parte superior, <br> dependiendo de la barra del desplazamiento. Es mejor que el nav tenga este posicionamiento
+                    </p>
+                    <br>
+                    <div class="img 3">
+                        <img src="img/img-16.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="pos">
+                        <div class="pos1 pos-5">Static</div>
+                        <div class="pos2 pos-5">Relative</div>
+                        <div class="pos3 pos-5">Fixed</div>
+                        <div class="pos4 pos-5">Absolute</div>
+                        <div class="pos5 pos-5">Sticky</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Display -->
+        <div class="caja" style="--color:rgb(27, 195, 161)" id="display">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="laptop-outline"></ion-icon>  
+                </div>
+                <div class="texto">
+                    <h2>
+                        Display      
+                    </h2><br>
+                    <p>
+                        El display, es la propiedad más importante para el control de la estructura de una pagina web
+                    </p>
+                    <p>
+                        Esta propiedad es usada para especificar como un elemento es mostrado en pantalla
+                    </p>
+                    <br>
+                    <p>
+                        Por ejemplo, "display: none;" es usado con JavaScript para quitar y poner sin borrar los elementos
+                    </p>
+                    <p>
+                        El display de "default" suele ser <code>block</code> o <code>inline</code>.
+                    </p>
+                    <p>
+                        Si quieres conocer todos los tipos tienes <strong><a href="https://developer.mozilla.org/es/docs/Web/CSS/display" class="boton-dis">aqui</a></strong> 
+                        un link
+                    </p>
+                    <br>
+                    <div class="img 3">
+                        <img src="img/img-5.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="box1 bx-5">Inline</div>
+                    <div class="box2 bx-5">Block</div>
+                    <div class="box3 bx-5">Contents</div>
+                    <div class="box4 bx-5">Flex</div>
+                    <div class="box5 bx-5">Grid</div>
+                </div>
+            </div>
+        </div>
+        <!-- Hover -->
+        <div class="caja" style="--color:rgb(27, 181, 195)" id="hover">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-regular fa-hand"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Hover
+                    </h2><br>
+                    <p>
+                        El hover, es una pseudoclase, esta va unida a la entidad o clase.
+                    </p>
+                    <p>
+                        Esto quiere decir que e diseño que pusimos dentro de <strong>"<em>entidad</em> :hover"</strong> , se activara
+                    </p>
+                    <p>
+                        En el momento que el usuario interactua con la entidad con la pseudoclase <strong><em>hover</em></strong>
+                    </p>
+                    <br>
+                    <p>
+                        Se forma por 2 partes. La entidad "estatica" o tambien antes de la interacción, y lo que pasara
+                    </p>
+                    <p>
+                        despues de la interaccion, la cual lleva la pseudoclase hover.
+                    </p>
+                    <br>
+                    <div class="img 3">
+                        <img src="img/img-9.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="tocame">
+                            ¡Tócame!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Transition -->
+        <div class="caja" style="--color:rgb(27, 133, 195)" id="transition">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-solid fa-hourglass"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Transiciones
+                    </h2><br>
+                    <p>
+                        El valor Transition, es un acompañamiento del <strong>hover</strong>
+                    </p>
+                    <p>
+                        Como la mayoria de de las etiquetas que hemos visto hasta ahora, <br> tiene tanto configuracion general como individual
+                    </p>
+                    <br>
+                    <p>
+                        Estas son o "transition", o también: <br>  "transition-delay" (tanto tiempo hasta el comienzo de la animacion) <br> "transition-duration" (duracion de la transicion) <br>
+                        "transition-property" (defines a que elemento solo le afecta la transicion: width, height, padding...) <br> "transition-timing-function" (especifica la velocidad de la curva de la animacion, <br> estos son: linear, ease, ease-in, ease-out, ease-in-out)
+                    </p>
+                    <br>
+                    <p>
+                        La propiedad "transition", en si misma, ejecuta todas las anteriores si es deseado, el unico inconveniente es que si tenemos "transition" <br> no podemos
+                        añadir ninguna de las individuales, pero, si no esta podemos añadir todas las individuales
+                    </p>
+                    <br>
+                    <div class="columna">
+                        <div class="img">
+                            <img src="img/img-10.jpg" alt="">
+                            <img src="img/img-11.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="transiciones columna">
+                        <div class="transicion">
+                            <p>
+                                transition
+                            </p>
+                        </div>
+                        <div class="retardo">
+                            <p>
+                                delay
+                            </p>
+                        </div>
+                        <div class="duracion">
+                            <p>
+                                duration
+                            </p>
+                        </div>
+                        <div class="propiedad">
+                            <p>property</p>
+                        </div>
+                        <div class="function linear">
+                            <p>
+                                function: linear;
+                            </p>
+                        </div>
+                        <div class="function ease">
+                            <p>
+                                function: ease;
+                            </p>
+                        </div>
+                        <div class="function ease-in">
+                            <p>
+                                function: ease-in;
+                            </p>
+                        </div>
+                        <div class="function ease-out">
+                            <p>
+                                function: ease-out;
+                            </p>
+                        </div>
+                        <div class="function ease-in-out">
+                            <p>
+                                function: ease-in-out;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Transform -->
+        <div class="caja" style="--color:rgb(27, 52, 195)" id="transform">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-brands fa-unity"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Tranformaciones 2D & 3D
+                    </h2><br>
+                    <p>
+                        Las transformaciones 2D, como su nombre indica, afectan sobre el elemento solo en las 2 dimensiones
+                    </p>
+                    <p>
+                        Las transformaciones 3D, es parecido, pero añadiendo 3 propiedades más, la cual lo vuelven tridimensional
+                    </p>
+                    <p>
+                        (rotateX, rotateY, rotateZ)
+                    </p>
+                    <br>
+                    <p>
+                        Se suelen utilizar las propiedades generales, (rotate, translate, skew y scale)
+                    </p>
+                    <p>
+                        Estos ejecutan tanto en X como en Y, pero existen variaciones para afectar cada <br> dimension individualmente
+                    </p>
+                    <br>
+                    <p>
+                        Las variaciones tienen 2 reglas, primero va la propiedad general y junto a esta la dimension 
+                    </p>
+                    <br>
+                    <div class="img 3">
+                        <img src="img/img-7.jpg" alt="">
+                        <br>
+                        <img src="img/img-8.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="transform">
+                        <div class="rotate tra">
+                            <p>
+                                rotate 
+                            </p>
+                        </div>
+                        <div class="scale tra">
+                            <p>
+                                scale
+                            </p>
+                        </div>
+                        <div class="skew tra">
+                            <p>
+                                skew
+                            </p>
+                        </div>
+                        <div class="translate tra">
+                            <p>
+                                translate
+                            </p>
+                        </div>
+                        <div class="matrix tra">
+                            <p>
+                                matrix
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Animation -->
+        <div class="caja" style="--color:rgb(63, 27, 195)" id="animacion">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Animaciones
+                    </h2><br>
+                    <p>
+                        Las animaciones, son como los hover, pero mas avanzados, es el siguiente nivel.
+                    </p>
+                    <p>
+                        CSS, te permite dar "vida" a los elementos HTML sin necesidad de JavaScript o Flash
+                    </p>
+                    <p>
+                        La animacion siempre va dentro de "@keyframes", y tiene que tener 2 cosas, un inicio y un final.
+                    </p>
+                    <p>
+                        Al igual que con "transition", "animation", tambien tiene formas individuales. Estas son:
+                    </p>
+                    <br>
+                    <p>
+                        "animation-name": El nombre al cual se le añadira el "@keyframes".
+                    </p>
+                    <p>
+                        "animation-duration": La duracion de la animación.
+                    </p>
+                    <p>
+                        "animation-delay": Retardo de la animación.
+                    </p>
+                    <p>
+                        "animation-iteration-count": Numero de veces que se repetira la animación.
+                    </p>
+                    <p>
+                        "animation-direction": Indica si la animacion irá hacia adelante, reversa o en ciclos alternativos.
+                    </p>
+                    <p>
+                        "animation-timing-function": Indica la velocidad de la curva de la animacion (linear, ease...).
+                    </p>
+                    <p>
+                        "animation-fill-mode": Especifica un estilo, para el elemento deseado, cuando la animacion no esta <br> siendo ejecutada.
+                    </p>
+                    <br>
+                    <p>
+                        La construccion del general es "animation: [NombreAnimación] [Duración] [FunciónTiempo] [Retraso] [Iteraciones] [Dirección]"
+                    </p>
+                    <br>
+                    <div class="img ">
+                        <img src="img/img-12.jpg" alt="">
+                        <img src="img/img-13.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="animacion1">
+                            <p>
+                                Animación 1
+                            </p>
+                        </div>
+                        <div class="animacion2">
+                            <p>
+                                Animación 2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tools -->
+        <div class="caja" style="--color:rgb(131, 27, 195)" id="herr">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="hammer-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Herramientas
+                    </h2><br>
+                    <p>
+                        Estas herramientas simples, sirven para dar información extra si es necesaria, y el usuario lo necesita, <br>
+                        esta estará "escondida" hasta que el usuario lo prefiera.
+                    </p>
+                    <p>
+                        .[clase1]:hover .[clase2] | Cuando interactuas con [clase1], [clase2] cambiara con lo que tenga dentro. 
+                    </p>
+                    <br>
+                    <div class="img">
+                        <img src="img/img-14.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna herr">
+                        <div class="herramienta">
+                            Pon el ratón sobre mi
+                            <span class="sorpresa">
+                                ¡Sorpresa!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Before & After -->
+        <div class="caja" style="--color:rgb(173, 27, 195)" id="bya">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Before & After
+                    </h2><br>
+                    <p>
+                        Esto, te ayuda a crear contenido "auto generado", pero tienes que definir que quieres que se auto genere.
+                    </p>
+                    <p>
+                        Son 2, ::before y  ::after. Se utiliza asi: [clase]::before/after{}. 
+                    </p>
+                    <p>
+                        Si pones before, todo lo que pongas dentro de el, se ejecutara ANTES, del contenido del html. Con after lo DESPUES.
+                    </p>
+                    
+                    <br>
+                    <div class="img ">
+                        <img src="img/img-15.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="antes ba">
+                            <p>
+                                Soy texto en HTML
+                            </p>
+                        </div>
+                        <div class="despues ba">
+                            <p>
+                                Soy texto en HTML
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="caja" style="--color:rgb(221, 17, 208)" id="boton">
+            <div class="contenido">
+                <div class="icono">
+                    <ion-icon name="radio-button-on-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Botones & Pseudoclase Active
+                    </h2><br>
+                    <p>
+                        "Button" es un elemento interactivo activado por el usuario. <br>
+                        Una vez activo, ejecuta una acción preprogramada.
+                    </p>
+                    <br>    
+                    <p>
+                        Existen 3 tipos: <br> <strong> "button": </strong>el cual sirve para ejecutar acciones preprogramadas <br>
+                        <strong> "a"</strong>: se usa para crear botones con links externos <br>
+                        <strong> "input" (type="button")</strong>: el cual sirve para completar formularios o enviar información
+                    </p>
+                    <br>
+                    <p>
+                        La pseudo-clase ":active", representa un elemento que el usuario esta activando. <br>
+                        Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y <br> termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos "a" y "button", pero también se puede usar en otros elementos
+                    </p>
+                    <br>
+                    <div class="img ">
+                        <img src="img/img-17.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="botones">
+                            <button class="boton">
+                                Botón Normal
+                            </button>
+                            <a href="#" class="boton">
+                                Botón Link
+                            </a>
+                            <input type="button" name="boton" class="boton" value="Botón Input">
+                        </div>
+                        <button class="boton2">
+                            Clickeame
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Combinadores -->
+        <div class="caja" style="--color:rgb(221, 17, 136)" id="combinador">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-brands fa-mix"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Combinadores
+                    </h2><br>
+                    <p>
+                        Los combinadores, es algo que explica la relacion entre selectores
+                    </p>
+                    <br>
+                    <p>
+                        Un selector de CSS, puede contener más de un simple selector, y entre ellos podemos poner un combinador. <br>
+                        Existen 4 tipos: 
+                    </p>
+                    <p>
+                        <strong>Selector descendiente (espacio):</strong> Este "selecciona" todos los elementos que son descendientes de un elemento en especifico.
+                    </p>
+                    <p>
+                        <strong>Selector de hijo (>):</strong> Selecciona todos los elementos hijos de un elemento en especifico.
+                    </p>
+                    <p>
+                        <strong>Selector de hermano adyacente (+):</strong> Es utilizado para seleccionar <strong>UN</strong> elemento distinto y continuo al mismo "nivel". <br>
+                        (Misma cantidad de tabulación si eres ordenado)
+                    </p>
+                    <p>
+                        <strong>Selector de hermano general (~):</strong> Es utilizado para seleccionar <strong>VARIOS</strong> elementos distintos y continuos al mismo "nivel".
+                    </p>
+                    <br>
+                    <p style="font-size: 12px;">
+                        Están pequeños ya que sino ocupan mucho espacio
+                    </p>
+                    <br>
+                    <div class="img2 ">
+                        <img src="img/img-18.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="espacio comb">
+                            <div>
+                                <p>Dentro</p>
+                                <p>Dentro</p>
+                                <section><p>Dentro</p></section>
+                            </div>
+                            <p>Fuera</p>
+                            <p>Fuera</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="img2 ">
+                        <img src="img/img-19.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="hijo comb">
+                            <div>
+                                <p>Dentro</p>
+                                <section><p>Dentro pero en un section</p></section>
+                                <p>Dentro</p>
+                            </div>
+                            <p>Fuera</p>
+                            <p>Fuera</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="img2 ">
+                        <img src="img/img-20.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="her comb">
+                            <div>
+                                <p>Dentro</p>
+                            </div>
+                            <p>Adyacente 1</p>
+                            <p>Adyacente 2</p>
+                            <div>
+                                <p>Dentro</p>
+                            </div>
+                            <p>Adyacente 1</p>
+                            <p>Adyacente 2</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="img2 ">
+                        <img src="img/img-21.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <div class="her2 comb">
+                            <p>Parrafo 1.</p>
+                            <div>
+                                <p>Parrafo 2.</p>
+                            </div>
+                            <p>Parrafo 3.</p>
+                            <p>Parrafo 4.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Unidades -->
+        <div class="caja" style="--color:rgb(155, 46, 46)" id="unidades">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Unidades de Medida
+                    </h2><br>
+                    <p>
+
+                    </p>
+                    <div class="med-text">
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <br>
+                    <div class="img2 ">
+                        <img src="img/img-.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

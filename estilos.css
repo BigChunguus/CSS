@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+::-webkit-scrollbar {
+    width: 1.5em;
+}
+::-webkit-scrollbar-track{
+    margin-bottom: 0.5em;
+    background-color: #2f2f2f;
+    border-radius: 0px 0px 40px 40px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, rgb(70, 68, 68), rgb(17, 17, 17));
+    border-radius: 40px;
+    height: 15%;
+    border: 0.5px solid #fff;
+    transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(to bottom,rgb(17, 17, 17) , rgb(70, 68, 68));
+}
+::-webkit-scrollbar-thumb:active{
+    background: rgba(17, 17, 17, 0.5);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#222;
+    max-width: 100%;
+}
+.por{
+    font-size: 8px;
+    margin-left: 20px;
+}
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:60px;
+}
+.contenedor .caja{
+    position: relative;
+    width: auto;
+    height: auto;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    max-width: 70%;
+    max-height: auto;
+    color: #fff;
+    margin: 30px;
+    box-shadow: 4px 4px 10px 10px rgba(0,0,0,0.1);
+}
+.contenedor .caja::before{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-top: 4px solid var(--color);
+    border-bottom: 4px solid var(--color);
+    z-index: -1;
+    transform: skewY(10deg);
+    transition: 0.5s ease-in-out;
+}
+.contenedor .caja:hover::before{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+.contenedor .caja::after{
+    content: '';
+    position: absolute;
+    inset: 60px -10px;
+    border-left: 4px solid var(--color);
+    border-right: 4px solid var(--color);
+    z-index: -1;
+    transform: skew(5deg);
+    transition: 0.5s ease-in-out;
+}
+.contenedor .caja:hover::after{
+    transform: skew(0deg);
+    inset: 40px -10px;
+}
+.contenedor .caja .contenido{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+    padding:20px;
+    overflow: hidden;
+}
+.contenedor .caja .contenido .icono{
+    padding: 10px;
+    margin: 10px;
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    box-shadow: 0 0 0 4px #2e2e2e,
+    0 0 0 6px var(--color);
+    color: var(--color);
+    transition-duration: 1s;
+}
+.contenedor .caja:hover .contenido .icono{
+    background-color: var(--color);
+    color:white;
+    box-shadow: 0 0 0 4px rgb(206, 202, 202),
+    0 0 10000px 10000px var(--color );
+}
+.contenedor .caja .contenido .texto .icon{
+    font-size: 40px;
+    display: block;
+    color: white;
+}
+.contenedor .caja .contenido .texto{
+    background-color: #3f3e3e;
+    border-radius: 10px;
+    padding:20px;
+}
+.contenedor .caja .contenido .texto h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+img{
+    overflow: visible;
+}
+.img img{
+    width:60%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.img2 img{
+    width: 10%;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+
+img:hover{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.indice{
+    color: #fff;
+    position: relative;
+    background-color: #2e2e2e;
+    width: 100%;
+    border-bottom:2px solid rgba(255, 255, 255,0.1);
+    border-radius: 0px 0px 20px 20px;
+    height: auto;
+    margin-left: 0px;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.indice h1{
+    padding: 30px;  
+    font-size: 50px;
+}
+.indice ul{
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+.indice ul li{
+    display: inline-block;
+    position: sticky;
+    transition: 0.5s;
+}
+.indice ul li a{
+    margin: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.indice ul li:nth-child(1) a{
+    background-color: rgb(195, 27, 27);
+}
+.indice ul li:nth-child(2) a { 
+    background-color: rgb(195, 100, 27);
+}
+.indice ul li:nth-child(3) a{
+    background-color: rgb(195, 161, 27);
+}
+.indice ul li:nth-child(4) a { 
+    background-color: rgb(128, 195, 27);
+}
+.indice ul li:nth-child(5) a{
+    background-color:rgb(55, 195, 27) ;
+}
+.indice ul li:nth-child(6) a { 
+    background-color: rgb(27, 195, 94);
+}
+.indice ul li:nth-child(7) a{
+    background-color: rgb(27, 195, 161);
+}
+.indice ul li:nth-child(8) a { 
+    background-color: rgb(27, 181, 195);
+}
+.indice ul li:nth-child(9) a{
+    background-color: rgb(27, 133, 195);
+}
+.indice ul li:nth-child(10) a { 
+    background-color: rgb(27, 52, 195);
+}
+.indice ul li:nth-child(11) a {
+    background-color: rgb(63, 27, 195);
+}
+.indice ul li:nth-child(12) a{
+    background-color:rgb(131, 27, 195) ;
+}
+.indice ul li:nth-child(13) a { 
+    background-color: rgb(173, 27, 195);
+}
+.indice ul li:nth-child(14) a{
+    background-color:rgb(221, 17, 208) ;
+}
+.indice ul li:nth-child(15) a { 
+    background-color: rgb(221, 17, 136);
+}
+.indice ul li a:hover{
+    opacity: 2;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+}
+.indice ul li a:active{
+    opacity: 0.6;
+    box-shadow: 3px 3px 10px 1px rgba(255, 255, 255,0.5);
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.exp{
+    /*Color de la letra*/
+    color:rgb(62, 161, 232);
+    background-color: rgb(177, 196, 201);
+    padding: 10px;
+    border-radius: 10px;
+    /*Tamaño de la letra*/
+    font-size: 14px;
+    /*Grosor o tamaño del delineado*/
+    font-weight: bold;
+    /*Tipo de letra*/
+    font-family: 'Courier New', Courier, monospace !important;
+}
+.caja-exp{
+    /*Crea una linea "invisible"*/border-style: solid;
+    /*Le doy grosor*/border-width: 2px;
+    /*Cambio su color*/border-color: rgb(15, 35, 210);
+    /*Borde redondeado*/border-radius: 5px /*Tambien se puede utilizar %*/
+}.caja-exp2{
+    /*Se puede editar los bordes individualmente*/
+    /*Borde superior con 4px de grosor y color rojo*/border-top: 4px solid rgb(190, 35, 35);
+    /*Borde inferior con 4px de grosor y color morado*/border-bottom: 4px solid rgb(138, 46, 199);
+    /*Quitar borde redondeado*/border-radius: 0px;
+}.myp{
+    background-color: rgb(224, 145, 49);
+    padding: 1px;
+}.margen{
+    /*Margin afecta fuera de la caja azul, haciendo algo parecido pero a la caja naranja*/
+    margin: 10px;
+    background-color: rgb(44, 82, 147);
+}.relleno{
+    /*Padding afecta a la caja azul, dando un relleno de 10px alrededor del texto*/
+    padding:10px;
+    background-color: rgb(44, 82, 147);
+}
+.lista-exp{
+    /*Con esta linea, podremos cambiar el diseño de los puntos(yo lo quito)*/
+    list-style-type: none;
+    /*Con esto puedes poner una imagen o un gif como lineado*/
+    /*list-style-image:url('----.gif/img...');*/
+}
+.lista-exp li{
+    color: #fff;
+    background-color:rgb(88, 190, 183);
+    margin:10px;
+    padding: 5px;
+    border-radius:5px;
+}
+.box1{
+    /*Todos los elementos con este elemento, y sean del mismo nivel
+    (como los "li" de la lista) so colocaran en horizontal, apartir 
+    del borde derecho del anterior elemento*/
+    background-color: rgb(203, 45, 45);
+    display: inline;
+}.box2{
+    /*Hace que otros elementos con "display: block;",
+    no pueden estar dentro ni encima de el*/
+    display: block;     /*Se puede convinar con inline, 
+                        y hace una fusion de ellos 2 (inline-block)
+                        La lista del indice tiene este display*/
+    background-color: rgb(216, 141, 21);
+}.box3{
+    /*Causa que el elemento hijo, aparezca si es priente directo del
+    elemento padre, Ignorando el elemento en si mismo*/
+    /*Es util, cuando se quiere que el elemento contenedor sea ignorado,
+    cuando se utilza CSS o tecnicas similares*/
+    background-color: rgb(195, 246, 29);
+    display: contents;
+}.box4{
+    /*Cause que, podamos especificar la alineacion de los elementos, que hay dentro
+    el tamaño de los elementos que contienen y distribuir el espacio restante que hay 
+    entre los elementos del contenedor*/
+    background-color: rgb(40, 208, 54);
+    display: flex;
+}.box5{
+    /*Es utilizado para el desarrollo de tablas y zeldas.
+    Es util para hacer "layout" y luego poder editarlo*/
+    background-color: rgb(18, 187, 213);
+    display: grid;
+}
+.bx-5{
+    margin:5px
+}
+.degradado-exp{
+    background: linear-gradient(to bottom right, rgb(107, 18, 203), rgb(213, 13, 206), rgb(203, 11, 110));   
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow: 10px 10px 5px 0px rgba(29, 29, 30, 0.8); 
+}
+.transform{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.tra{
+    padding: 10px;
+    max-width: 70px;
+    margin: 5px;
+    transition: 1s;
+}
+
+.rotate{
+    background-color: rgb(203, 45, 45);
+}
+.scale{
+    background-color: rgb(216, 141, 21);
+}
+.skew{
+    background-color: rgb(195, 246, 29);
+}
+.matrix{
+    background-color: rgb(40, 208, 54);
+}
+.translate{
+    max-width: 100px;
+    background-color: rgb(18, 187, 213);
+}
+.columna{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+.rotate:hover{/*Como su nombre indica, rota la entidad en un plano 2D (tanto X como Y)*/
+    transform: rotate(90deg);
+}.scale:hover{/*Aumenta o disminuye el tamaño de la entidad, asi como la de sus hijos.*/
+    transform: scale(0.75);
+}
+.skew:hover{/*"Tuerce" la entidad*/
+    transform: skew(20deg);
+}
+.translate:hover{/*Mueve o traslada la entidad, la distancia introducido (prgero X y luego Y)*/
+    transform: translate(300px, 10px);
+}.matrix:hover{/*Una fusión de todos los anteriores. Su orden es: ScaleX, skewY, skewX, ScaleY, translateX, translateY*/
+    transform: matrix(1.25, 0.2, 0, 1, 0, 0);
+}
+.tocame{
+    background-color: rgb(54, 136, 203);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    /*Si queremos que la transicion no sea instantanea, utilizamos esto*/
+    /*Tiene que ir obligado en la parte que no tiene hover*/
+    transition: 1s;
+}/*La clase o entidad, con la pseudoclase hover*/
+.tocame:hover{
+    background-color: rgb(211, 51, 27);
+    width: 100%;
+    padding:20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.transiciones div{
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    margin: 5px;
+}
+.transiciones .function{
+    background-color: rgb(59, 127, 191);
+}
+.transicion{
+    background: rgb(196, 53, 53);
+}
+.retardo{
+    background: rgb(185, 162, 31);
+}
+.duracion{
+    background: rgb(75, 208, 31);
+}
+.propiedad{
+    background: rgb(19, 193, 143);
+}
+.transicion{
+    /*El ancho tardara 1s, mientras que el fondo tardara en cambiarse de color 8s*/
+    transition: width 1s, background-color 8s;
+}
+.transicion:hover{
+    /*Grosor al maximo, y cambio de color*/
+    width: 100%;
+    background-color: rgb(100, 29, 154);
+}
+.retardo{
+    /*Tardara un segundo en empezar la animacion*/
+    transition-delay: 1s;
+}
+.retardo:hover{
+    width: 100%;
+}
+.duracion{
+    /*Esto es lo mismo que "transition:1s;"*/
+    transition-duration: 1s;
+}
+.duracion:hover{
+    width: 100%;
+}
+.propiedad{
+    /*La duracion de la transicion solo afectara al fondo y no al ancho*/
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.propiedad:hover{
+    background-color: rgb(196, 12, 193);
+    width: 100%;
+}
+.function{
+    transition-duration: 2s;
+}
+
+.linear{
+    /*La animacion es lineal, es decir, siempre a la misma velocidad*/
+    transition-timing-function: linear;
+}.ease{
+    /*Empieza rapido, termina lento*/
+    transition-timing-function: ease;
+}.ease-in{
+    /*Empieza lento, termina rapido*/
+    transition-timing-function: ease-in;
+}.ease-out{
+    /*Empieza rapido, termina lento*/
+    transition-timing-function: ease-out;
+}.ease-in-out{
+    /*Empieza lento, acelera, y vuelve a terminar lento*/
+    transition-timing-function: ease-in-out;
+}
+.linear:hover{
+    width: 100%;
+}
+.ease:hover{
+    width: 100%;
+}
+.ease-in:hover{
+    width: 100%;
+}
+.ease-out:hover{
+    width: 100%;
+}
+.ease-in-out:hover{
+    width: 100%;
+}
+.animacion1{
+    margin: 20px;
+    background-color: rgb(237, 180, 11);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.animacion2{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(214, 50, 50);
+}
+.animacion1{
+    /*Su nombre y duracion*/
+animation: animacion1 4s infinite linear;
+}
+/*La animacion*/
+@keyframes animacion1{
+/*Desde*/
+from{
+transform: rotate(0deg);
+}
+/*Hasta*/
+to{
+transform: rotate(360deg);
+}
+}   
+.animacion2{
+animation: animacion2 4s infinite linear;
+}
+
+/*Para aññadir más tipos de animaciones, se pueden utilizar %, hasta el 100%*/
+@keyframes animacion2{
+    0%{
+    background-color: rgb(215, 43, 43);
+    }
+    20%{
+    background-color: rgb(199, 177, 30);
+    }
+    40%{
+    background-color: rgb(104, 208, 8);
+    }
+    60%{
+    background-color: rgb(13, 200, 107);
+    }
+    80%{
+    background-color: rgb(9, 135, 181);
+    }
+    100%, 0%{
+    background-color: rgb(147, 25, 195);
+    }
+}
+.herr{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(20, 91, 172);
+    padding: 10px;
+    border-radius: 10px;
+}
+.herramienta{
+    border-bottom: 2px dotted #000;
+}
+.herramienta .sorpresa{
+    /*Con esto es invisible*/
+    visibility: hidden;
+    background-color: rgb(176, 16, 194);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    /*La posicion absoluta, es independiente a todas las posiciones 
+    que lo "encadenaban" antes, solo se podrá configurar, dentro del mismo*/
+    position: absolute;
+    margin-top: -5px;
+    margin-left:70px;
+    transform: scale(2);
+    /*Se vera mas adelante, pero es posicionamiento en Z*/
+    z-index: 1;
+}/*Cuando pones el raton en "herramientas", se pondra visible "sorpresa"*/
+.herramienta:hover .sorpresa{
+    visibility: visible;
+}
+
+.ba{
+    background-color: rgb(36, 42, 43);
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+.antes::before{
+    /*El contenido que estara ANTES*/
+    content: "Soy texto en CSS en ::before";
+    background-color: rgb(189, 29, 29);
+    padding: 1px;
+    border:1px solid rgb(79, 5, 5);
+}
+.despues::after{
+    /*El contenido que estara DESPUES*/
+    content: "Soy texto en CSS en ::after";
+    background-color: rgb(27, 169, 188);
+    padding: 1px;
+    border:1px solid rgb(5, 72, 79);
+}
+
+
+.pos{
+    background-color: rgb(33, 30, 30);
+    padding: 10px;
+    border-radius: 10px;
+}
+.pos-5{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.pos1{
+    /*Esto no cambia debido a que ya viene con esta posicion de serie*/
+    position: static;
+    background-color: rgb(192, 20, 20);
+    /*Se aleja un 30% de la izquierda*/
+    margin-left: 5%;
+    margin-top: 5%;
+}.pos2{
+    /*El posicionamiento relative, es muy util en el orden de varias entidades hijas
+    dentro de una entidad padre*/
+    /*Por ejemplo, esta pagina web, cada seccion tiene "position: relative;"*/
+    position: relative;
+    background-color: rgb(202, 135, 10);
+    margin-left: 5%;
+    margin-top: 0%;
+}.pos3{
+    /*No se porque desaparece, pero si no esta muy encadenado a otros 
+    posicionamientos, siempre estara en el mismo sitio*/
+    position: fixed;
+    background-color: rgb(80, 176, 11);
+}.pos4{
+    position: absolute;
+    background-color: rgb(22, 168, 176);
+    /*Es solo afectado por ello, y no por los posicionamientos anteriores,
+    ya que yo dije que todos sean relative*/
+    margin-top: -5%;
+    margin-left:50%;
+}.pos5{
+    /*Este es como un relative, su unico uso en si es en la entidad <nav>*/
+    position: sticky;
+    background-color: rgb(13, 49, 180);
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.boton-dis{
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgb(95, 93, 93);
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.boton{
+    background: linear-gradient(to right, var(--color), rgb(174, 28, 177));
+    color: white;
+    margin: 10px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border-bottom: 4px solid rgba(0,0,0,0.5);
+}
+/*Dieño del boton*/
+.boton2{
+    background:rgb(221, 17, 208);
+    margin-top: 10px;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px rgb(200, 109, 228);
+    transition: 0.1s;
+}
+.boton2:hover {
+    background-color: #8e3e85
+}
+.boton2:active {
+    /*Que ocurrira si el botón es activado*/
+    background-color: #8b2cab;
+    box-shadow: 0 2px rgb(136, 52, 145);
+    transform: translateY(4px);
+}
+.comb {
+    background: rgb(43, 46, 121);
+    padding: 20px;
+    border-radius: 10px;
+}
+/*Afecta a todas las P dentro del div*/
+.espacio div p{
+    background: rgb(159, 29, 29);
+}
+.hijo div > p {
+    background: rgb(159, 29, 29);
+}
+.her div + p {
+    background: rgb(159, 29, 29);
+}
+.her2 div ~ p {
+    background: rgb(159, 29, 29);
+}
+.med-text{
+    text-align: left;
+}
