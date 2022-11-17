@@ -9,9 +9,17 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
     <script src="https://kit.fontawesome.com/0106407f41.js" crossorigin="anonymous"></script>
-<!-- hOLA -->
+
 <style>
-    
+    .em{font-size: 2em;}
+    .ex{font-size: 2ex;}
+    .ch{font-size: 2ch;}
+    .rem{font-size: 2rem;}
+    .vw{font-size: 2vw;}
+    .vh{font-size: 2vh;}
+    .vmin{font-size: 2vmin;}
+    .vmax{font-size: 2vmax;}
+    .porc{font-size: 2%;}
 </style>
 </head>
 <body>
@@ -830,21 +838,80 @@
                         Unidades de Medida
                     </h2><br>
                     <p>
-
+                        CSS, tiene una cantidad masiva, para expresar la longitud.
                     </p>
+                    <p style="background-color: rgb(127, 120, 120); border-radius:10px; padding: 10px;">
+                        Existen, las longitudes absolutas, las cuales seran expresadas exactamente de ese tamaño. <br>
+                        Las medidas absolutas, no son recomendadas para utilizar en pantalla, debido a que el tamaño de ellas varia mucho
+                    </p>
+                    
+                    <br>
+                    <br>
                     <div class="med-text">
                         <p>
-                            
+                            <strong>"cm":</strong> Centimetros, literalmente centimetros. <p class="cm siz">Tamaño centimetros</p> <br>
+                        </p>
+                        <p>
+                            <strong>"mm":</strong> Milimetros, nada más. <p class="mm siz">Tamaño milimetros</p> <br>
+                        </p>
+                        <p>
+                            <strong>"in":</strong> Pulgadas, 1 pulgada son 2.54cm, o tambien 96px. <p class="in siz">Tamaño pulgadas</p> <br>
+                        </p>
+                        <p>
+                            <strong>"px":</strong> Pixeles, 1px = 1/96 pulgadas. <p class="px siz">Tamaño pixeles</p> <br>
+                        </p>
+                        <p>
+                            <strong>"pt":</strong> Points, 1pt = 1/72 pulgadas. <p class="pt siz">Tamaño puntos</p> <br>
+                        </p>
+                        <p>
+                            <strong>"pc":</strong> Picas, 1pc = 12pt. <p class="pc siz">Tamaño picas</p> <br>
                         </p>
                     </div>
                     <br>
-                    <div class="img2 ">
-                        <img src="img/img-.jpg" alt="">
+                    <div class="img ">
+                        <img src="img/img-22.jpg" alt="">
                     </div>
-                    <div class="icon 2">
-                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    <br>
+                    <p style="background-color: rgb(127, 120, 120); border-radius:10px; padding: 10px;">
+                        Tambien existen las unidades relativas, las cuales especifican la longitud <br>
+                        relativo a otra propiedad de longitud. <br>
+                        Las longitudes relativas, escalan mejor entre diferentes medios de renderizado.
+                    </p>
+                    <br>
+                    <br>
+                    <div class="med-text">
+                        <p>
+                            <strong>"em":</strong> Relativo al "font-size" del elemento (2em, significa 2 veces el "font-size") <p class="siz em">Tamaño em</p> <br>
+                        </p>
+                        <p>
+                            <strong>"ex":</strong> Relativo a la altura-X de la fuente actual (poco usado) <p class="siz ex">Tamaño ex</p> <br>
+                        </p>
+                        <p>
+                            <strong>"ch":</strong> Relativo al ancho de "0" <p class="siz ch">Tamaño ch</p> <br>
+                        </p>
+                        <p>
+                            <strong>"rem":</strong> Relativo al "font-size" del elemento raíz <p class="siz rem">Tamaño rem</p> <br>
+                        </p>
+                        <p>
+                            <strong>"vw":</strong> Relativo a 1% del ancho del viewport* <br> (tamaño de la ventana del navegador) <p class="siz vw">Tamaño vw</p> <br>
+                        </p>
+                        <p>
+                            <strong>"vh":</strong> Relativo a 1% del arriba del viewport* <p class="siz vh">Tamaño vh</p> <br>
+                        </p>
+                        <p>
+                            <strong>"vmin":</strong> Relativo al 1% de la dimensión mas pequeña del viewport  <p class="siz vmin">Tamaño vmin</p> <br>
+                        </p>
+                        <p>
+                            <strong>"vmax":</strong> Relativo al 1% de la dimensión mas grande del viewport  <p class="siz vmax">Tamaño vmax</p> <br>
+                        </p>
+                        <p>
+                            <strong>"%":</strong> Relativo al elemento padre <p class="siz porc">Tamaño %</p> <br>
+                        </p>
                     </div>
-
+                    <br>
+                    <div class="img ">
+                        <img src="img/img-23.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>

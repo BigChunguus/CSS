@@ -237,6 +237,9 @@ img:hover{
 .indice ul li:nth-child(15) a { 
     background-color: rgb(221, 17, 136);
 }
+.indice ul li:nth-child(16) a { 
+    background-color: rgb(155, 46, 46);
+}
 .indice ul li a:hover{
     opacity: 2;
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
@@ -247,7 +250,9 @@ img:hover{
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
+.siz{
+    text-decoration: underline;
+}
 .exp{
     /*Color de la letra*/
     color:rgb(62, 161, 232);
@@ -705,4 +710,5 @@ animation: animacion2 4s infinite linear;
 }
 .med-text{
     text-align: left;
+    margin-left: 10%;
 }
