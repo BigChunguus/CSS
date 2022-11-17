@@ -712,3 +712,18 @@ animation: animacion2 4s infinite linear;
     text-align: left;
     margin-left: 10%;
 }
+.cm{font-size: 1cm;}
+.mm{font-size: 1mm;}
+.in{font-size: 1in;}
+.px{font-size: 1px;}
+.pt{font-size: 1pt;}
+.px{font-size: 1pc;}
+.em{font-size: 2em;}
+.ex{font-size: 2ex;}
+.ch{font-size: 2ch;}
+.rem{font-size: 2rem;}
+.vw{font-size: 2vw;}
+.vh{font-size: 2vh;}
+.vmin{font-size: 2vmin;}
+.vmax{font-size: 2vmax;}
+.porc{font-size: 2%;}
