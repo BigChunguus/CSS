@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-/* html{
+html{
     scroll-behavior: smooth;
-} */
+} 
 ::-webkit-scrollbar {
     width: 1.5em;
 }
