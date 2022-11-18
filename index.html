@@ -11,6 +11,31 @@
     <script src="https://kit.fontawesome.com/0106407f41.js" crossorigin="anonymous"></script>
 
 <style>
+    .z-i div{
+        /*Los fuerzo a que se superpongan*/
+        position: absolute;
+        /*Mismo grosor para los divs siguientes*/
+        width: 30%;
+    }
+    /*Estos divs estan dentro de "z-i", 
+    asi que tendran el ancho asignado*/
+    .abajo{
+        background-color: red;
+        /*Valor 1, en posicionamiento z*/
+        z-index: 1;
+    }.medio{
+        background-color: blue;
+        /*Valor 2, en posicionamiento z*/
+        z-index: 2;
+        /*Margen izq*/
+        left: 20%;
+    }.encima{
+        background-color: green;
+        /*Valor 3, en posicionamiento z*/
+        z-index: 3;
+        /*Margen izq*/
+        left: 30%;
+    }
 </style>
 </head>
 <body>
@@ -34,6 +59,7 @@
                 <li class="indiceli"><a href="#boton">Boton & Active</a></li>
                 <li class="indiceli"><a href="#combinador">Combinadores</a></li>
                 <li class="indiceli"><a href="#unidades">Unidades de Medida</a></li>
+                <li class="indiceli"><a href="#vAr">Variables & Z-Index</a></li>
             </ul>
         </nav>
         <!-- Texto -->
@@ -902,6 +928,59 @@
                     <br>
                     <div class="img ">
                         <img src="img/img-23.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Variables y Z-Index -->
+        <div class="caja" style="--color:rgb(180, 131, 72)" id="vAr">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-brands fa-xing"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Variables & Z-Index
+                    </h2><br>
+                    <p>
+                        La funcion <strong>"var()"</strong> es usada para insertar valores de una variable CSS <br>
+                        Las variables de CSS, tienen acceso al DOM, lo que significa, <br>
+                        que puedes crear variables, con rango global o local, cambiarlas con JS, <br>
+                        y cambiar las variables basado en los "media queries".
+                    </p>
+                    <br>
+                    <p>
+                        La sintaxis es simple: "--[nombre]:valor;" <br>
+                        En valor, puedes poner el dato que quieras, claro esta, que luego tienes <br> que saber que valor tiene asginado
+                    </p>
+                    <br>
+                    <div class="img ">
+                        <img src="img/img-24.jpg" alt="">
+                    </div>
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <div class="columna">
+                        <p class="prueba_var">Tengo 4 variables asignadas</p>
+                    </div>
+                    <br><br>
+                    <p>
+                        El Z-Index, especifica el posicionamiento en "z", <br>
+                        los elementos con mayor valor, se superpondran sobre los de menor valor. <br><br>
+                        Para las cajas con posicionamiento, (sin contar "static"), <br> especificara: 
+                    </p>
+                    <br>
+                    <div class="med-text">
+                        <ul style="list-style-type: decimal;text-decoration: underline; ">
+                            <li>El nivel de apilamiento en el actual contexto de apilado</li>
+                            <li>Si la caja establece un contexto de apilamiento local</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="z-i">
+                        <div class="abajo"></div>
+                        <div class="medio"></div>
+                        <div class="encima"></div>
                     </div>
                 </div>
             </div>

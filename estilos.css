@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 ::-webkit-scrollbar {
     width: 1.5em;
 }
@@ -241,6 +241,9 @@ img:hover{
 }
 .indice ul li:nth-child(16) a { 
     background-color: rgb(155, 46, 46);
+}
+.indice ul li:nth-child(17) a { 
+    background-color: rgb(180, 131, 72);
 }
 .indice ul li a:hover{
     opacity: 2;
@@ -757,4 +760,23 @@ animation: animacion2 4s infinite linear;
     border-left: 1px solid white;
     border-bottom: none;
     border-right: none;
+}
+:root{
+    --azul: blue;
+    --grande: 20px;
+    --radio: 10px;
+    --padding:10px;
+}
+.prueba_var{
+    background-color: var(--azul);
+    font-size: var(--grande);
+    border-radius: var(--radio);
+    padding: var(--padding);
+}
+.z-i{
+    background: #5d5c5c;
+    padding: 10px;
+    border-radius: 10px;
+    --alt:200px;
+    height: var(--alt);
 }
