@@ -780,3 +780,31 @@ animation: animacion2 4s infinite linear;
     --alt:200px;
     height: var(--alt);
 }
+.z-i div{
+    height: calc(var(--alt) /1.15);
+    /*Los fuerzo a que se superpongan*/
+    position: absolute;
+    /*Mismo grosor para los divs siguientes*/
+    width: 30%;
+}
+/*Estos divs estan dentro de "z-i", 
+asi que tendran el ancho asignado*/
+.abajo{
+    background-color: red;
+    /*Valor 1, en posicionamiento z*/
+    z-index: 1;
+}
+.medio{
+    background-color: blue;
+    /*Valor 2, en posicionamiento z*/
+    z-index: 2;
+    /*Margen izq*/
+    left: 20%;
+}
+.encima{
+    background-color: green;
+    /*Valor 3, en posicionamiento z*/
+    z-index: 3;
+    /*Margen izq*/
+    left: 30%;
+}
