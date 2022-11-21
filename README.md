@@ -4,5 +4,5 @@
 <br>Por siguiente, le clickeais al descargar .zip, y ala, ya lo teneis
 </h4>
 
-<p>Podeis aladir sugerencias en el archivo "Sugerencias.md"</p>
+<p>Podeis añadir sugerencias en el archivo "Sugerencias.md"</p>
 <p>Nota: este repositorio ira actualizandose con más información</p>
