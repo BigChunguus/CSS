@@ -38,6 +38,18 @@ body{
     background:#222;
     max-width: 100%;
 }
+.logo{
+    width: 33%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.logo:hover{
+    width: 33%;
+}
 .por{
     font-size: 8px;
     margin-left: 20px;
