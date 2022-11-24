@@ -39,7 +39,7 @@ body{
     max-width: 100%;
 }
 .logo{
-    width: 33%;
+    width: 25%;
     height: auto;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -48,7 +48,7 @@ body{
     -o-border-radius: 20px;
 }
 .logo:hover{
-    width: 33%;
+    width: 25%;
 }
 .por{
     font-size: 8px;
@@ -188,7 +188,8 @@ img:hover{
 .indice ul{
     list-style: none;
     padding: 20px;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
 }
 .indice ul li{
     display: inline-block;
@@ -204,6 +205,7 @@ img:hover{
     padding: 10px;
     opacity: 0.7;
     transition: 0.5s;
+    font-size: 15px;
 }
 
 .indice ul li:nth-child(1) a{
@@ -257,6 +259,9 @@ img:hover{
 .indice ul li:nth-child(17) a { 
     background-color: rgb(180, 131, 72);
 }
+.indice ul li:nth-child(18) a {
+    background-color: rgb(180, 180, 72);
+}
 .indice ul li a:hover{
     opacity: 2;
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
@@ -265,7 +270,11 @@ img:hover{
     opacity: 0.6;
     box-shadow: 3px 3px 10px 1px rgba(255, 255, 255,0.5);
 }
-
+.indice i, .indice ion-icon{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center ;
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .siz{
     text-decoration: underline;
