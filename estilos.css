@@ -4,7 +4,7 @@ html{
     scroll-behavior: smooth;
 } 
 ::-webkit-scrollbar {
-    width: 1.5em;
+    width: 0.8em;
 }
 ::-webkit-scrollbar-track{
     margin-bottom: 0.5em;
@@ -12,14 +12,18 @@ html{
     border-radius: 0px 0px 40px 40px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom, rgb(70, 68, 68), rgb(17, 17, 17));
+    background:#000;
     border-radius: 40px;
     height: 15%;
-    border: 0.5px solid #fff;
+    border: 1pt solid #fff;
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to bottom,rgb(17, 17, 17) , rgb(70, 68, 68));
+    background: rgb(17,17,17);
 }
 ::-webkit-scrollbar-thumb:active{
     background: rgba(17, 17, 17, 0.5);
@@ -37,6 +41,7 @@ body{
     min-height: 100vh;
     background:#222;
     max-width: 100%;
+    
 }
 .logo{
     width: 25%;
