@@ -12,6 +12,17 @@
     <script src="https://kit.fontawesome.com/0106407f41.js" crossorigin="anonymous"></script>
 
 <style>
+    .overflow{
+        background-color: #2e2e2e;
+        padding: 40px;
+        height: 150px;
+        width: 50%;
+        margin: 0 auto;
+        overflow:hidden;
+    }
+    .overflow:hover{
+        overflow: visible;
+    }
 </style>
 </head>
 <body>
@@ -38,6 +49,7 @@
                 <li class="indiceli"><a href="#unidades"><i class="fa-solid fa-pen-ruler"></i> Unidades de Medida</a></li>
                 <li class="indiceli"><a href="#vAr"><i class="fa-brands fa-xing"></i> Variables & Z-Index</a></li>
                 <li class="indiceli"><a href="#media"><i class="fa-solid fa-m"></i> Media Queries</a></li>
+                <li class="indiceli"><a href="#overflow"><i class="fa-brands fa-stack-overflow"></i> Overflow</a></li>
             </ul>
         </nav>
         <!-- Texto -->
@@ -1074,6 +1086,49 @@
                     <p>
                         <small>Lo siento pero no puedo dar un ejemplo :-S</small>
                     </p>
+                </div>
+            </div>
+        </div>
+        <!-- Overflow -->
+        <div class="caja" style="--color:rgb(106, 180, 72);" id="overflow">
+            <div class="contenido">
+                <div class="icono">
+                    <i class="fa-brands fa-stack-overflow"></i>
+                </div>
+                <div class="texto">
+                    <h2>
+                        Overflow
+                    </h2><br>
+                    <p>
+                        La propiedad "overflow" de CSS, controla que sucede al contenido cuando es demasiado grande <br>como para ocupar el area.
+                    </p>
+                    <br>
+                    <p>
+                        Un ejemplo de esto, son estas cajas que has estado viendo por toda la pagina. <br>
+                        El color que veis que se expande, en realidad ocuparia 10.000px. pero con la propiedad "overflow: hidden;", <br>
+                        deja de ocupar y desaparece
+                    </p>
+                    <br>
+                    <div class="img 1">
+                        <img src="img/img-30.jpg" alt="">
+                    </div>
+                    <div class="img 1">
+                        <img src="img/img-29.jpg" alt="">
+                    </div>
+                    
+                    <div class="icon 2">
+                        <ion-icon name="caret-down-circle-outline"></ion-icon>
+                    </div>
+                    <br>
+                    <div class="overflow">
+                        Caja con "overflow: hidden;". <br>
+                        Tocame para hacerlo visible. <br>
+                        Cuando la letra, llega a ocupar más que el tamaño de la caja (200px), empezara a desaparecer.
+                        Estara ahí, pero será invisible, ya que nosotros lo queremos asi. <br>
+
+                        ¡HALO!
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>

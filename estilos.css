@@ -8,8 +8,13 @@ html{
 }
 ::-webkit-scrollbar-track{
     margin-bottom: 0.5em;
-    background-color: #2f2f2f;
-    border-radius: 0px 0px 40px 40px;
+    margin-top: 0.5em;
+    background-color: rgb(153, 139, 158);
+    border-radius: 40px 40px 40px 40px;
+    -webkit-border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    -ms-border-radius: 40px 40px 40px 40px;
+    -o-border-radius: 40px 40px 40px 40px;
 }
 ::-webkit-scrollbar-thumb{
     background:#000;
@@ -266,6 +271,9 @@ img:hover{
 }
 .indice ul li:nth-child(18) a {
     background-color: rgb(180, 180, 72);
+}
+.indice ul li:nth-child(19) a {
+    background-color: rgb(106, 180, 72);
 }
 .indice ul li a:hover{
     opacity: 2;
